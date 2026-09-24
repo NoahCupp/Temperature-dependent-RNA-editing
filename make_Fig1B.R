@@ -25,7 +25,7 @@ tmp1 = tmp1 %>%
 ggplot(tmp1, aes(x = '', y = prop, fill = type)) +
 	geom_bar(stat = 'identity', color = 'white') +
 	geom_label(aes(y = ypos, label = Freq), color = 'white') +
-	coord_polar('y', start = 0) +
+	#coord_polar('y', start = 0) +
 	scale_fill_manual(values = c('#4385FF', 'grey', '#FF654B'), name = NULL) +
 	theme_void() +
 	theme(legend.position = 'none')
